@@ -14,7 +14,7 @@ def predict():
     '''
     For rendering results on HTML GUI
     '''
-    int_features = [x for x in request.form.values()]
+    int_features = [x.lower() for x in request.form.values()]
 
     ##################
     '''
